@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Test Preparation Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        label {
+            margin-left: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        .topic-section {
+            margin-top: 20px;
+        }
+        .topic-section h2 {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>C++ Test Preparation Checklist</h1>
+    
+    <div class="topic-section">
+        <h2>1. Pointers and Memory Management</h2>
+        <ul>
+            <li><input type="checkbox" id="pointer1"><label for="pointer1">Basic Pointers: Syntax, dereferencing, pointer arithmetic, null pointers.</label></li>
+            <li><input type="checkbox" id="pointer2"><label for="pointer2">Dynamic Memory Management: new, delete, memory leaks, dangling pointers.</label></li>
+            <li><input type="checkbox" id="pointer3"><label for="pointer3">Smart Pointers: std::unique_ptr, std::shared_ptr, std::weak_ptr.</label></li>
+            <li><input type="checkbox" id="pointer4"><label for="pointer4">Pointer to Array / Array of Pointers.</label></li>
+            <li><input type="checkbox" id="pointer5"><label for="pointer5">Pointer to Function: Using function pointers for callbacks.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>2. Object-Oriented Programming (OOP) Concepts</h2>
+        <ul>
+            <li><input type="checkbox" id="oop1"><label for="oop1">Classes and Objects: Basics, constructors, destructors, member functions.</label></li>
+            <li><input type="checkbox" id="oop2"><label for="oop2">Inheritance: Single, multiple, virtual inheritance.</label></li>
+            <li><input type="checkbox" id="oop3"><label for="oop3">Polymorphism: Virtual functions, pure virtual functions, abstract classes.</label></li>
+            <li><input type="checkbox" id="oop4"><label for="oop4">Encapsulation and Abstraction: Access specifiers, getters, and setters.</label></li>
+            <li><input type="checkbox" id="oop5"><label for="oop5">Overloading: Function overloading, operator overloading, constructor overloading.</label></li>
+            <li><input type="checkbox" id="oop6"><label for="oop6">Memory Management in OOP: Destructor handling in inheritance, RAII pattern.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>3. C++ Standard Library (STL)</h2>
+        <ul>
+            <li><input type="checkbox" id="stl1"><label for="stl1">Containers: Vectors, Lists, Maps, Sets, Queues, Stacks.</label></li>
+            <li><input type="checkbox" id="stl2"><label for="stl2">Iterators: begin(), end(), rbegin(), rend(), iterator categories.</label></li>
+            <li><input type="checkbox" id="stl3"><label for="stl3">Algorithms: Sorting, Searching, Transforming, Randomization.</label></li>
+            <li><input type="checkbox" id="stl4"><label for="stl4">Function Objects (Functors): Custom function objects with STL algorithms.</label></li>
+            <li><input type="checkbox" id="stl5"><label for="stl5">Lambda Functions: Capturing variables, passing them to algorithms.</label></li>
+            <li><input type="checkbox" id="stl6"><label for="stl6">Lambda Expressions in STL algorithms.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>4. C++ Features (Version 14)</h2>
+        <ul>
+            <li><input type="checkbox" id="cpp14-1"><label for="cpp14-1">Auto Keyword: Type inference in variables and return types.</label></li>
+            <li><input type="checkbox" id="cpp14-2"><label for="cpp14-2">Smart Pointers: std::make_unique, std::make_shared.</label></li>
+            <li><input type="checkbox" id="cpp14-3"><label for="cpp14-3">Type Deduction: auto, decltype, template type deduction.</label></li>
+            <li><input type="checkbox" id="cpp14-4"><label for="cpp14-4">User-Defined Literals: Creating custom literals.</label></li>
+            <li><input type="checkbox" id="cpp14-5"><label for="cpp14-5">Range-based for loops: Iterating over containers and arrays.</label></li>
+            <li><input type="checkbox" id="cpp14-6"><label for="cpp14-6">std::chrono: Time Management and timers.</label></li>
+            <li><input type="checkbox" id="cpp14-7"><label for="cpp14-7">std::tuple: Packing multiple types into one object.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>5. File Operations</h2>
+        <ul>
+            <li><input type="checkbox" id="file1"><label for="file1">File I/O: Using streams (std::ifstream, std::ofstream, std::fstream).</label></li>
+            <li><input type="checkbox" id="file2"><label for="file2">Reading/Writing Text and Binary Files: Handling files and errors.</label></li>
+            <li><input type="checkbox" id="file3"><label for="file3">File Buffering: Buffered vs unbuffered I/O.</label></li>
+            <li><input type="checkbox" id="file4"><label for="file4">Serialization/Deserialization: Techniques to save/load data in custom formats.</label></li>
+            <li><input type="checkbox" id="file5"><label for="file5">Working with Directories: std::filesystem for directories and file operations.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>6. Linux/UNIX in C++ (Industrial Use)</h2>
+        <ul>
+            <li><input type="checkbox" id="linux1"><label for="linux1">System Calls: open(), read(), write(), close().</label></li>
+            <li><input type="checkbox" id="linux2"><label for="linux2">Process Management: fork(), exec(), process synchronization.</label></li>
+            <li><input type="checkbox" id="linux3"><label for="linux3">Multithreading: std::thread, std::mutex, thread synchronization.</label></li>
+            <li><input type="checkbox" id="linux4"><label for="linux4">Memory Management: mmap(), munmap(), shared memory.</label></li>
+            <li><input type="checkbox" id="linux5"><label for="linux5">Signals: Handling signals using signal() or sigaction().</label></li>
+            <li><input type="checkbox" id="linux6"><label for="linux6">IPC: Pipes, message queues, shared memory.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>7. Basic Algorithms</h2>
+        <ul>
+            <li><input type="checkbox" id="algorithms1"><label for="algorithms1">Searching: Linear search, Binary search.</label></li>
+            <li><input type="checkbox" id="algorithms2"><label for="algorithms2">Sorting: Bubble sort, Merge sort, Quick sort, std::sort().</label></li>
+            <li><input type="checkbox" id="algorithms3"><label for="algorithms3">Algorithm Complexity: Big O notation (Time and Space Complexity).</label></li>
+            <li><input type="checkbox" id="algorithms4"><label for="algorithms4">Recursion: Recursive functions in sorting and searching.</label></li>
+            <li><input type="checkbox" id="algorithms5"><label for="algorithms5">Dynamic Programming: Solving optimization problems.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>8. Concurrency and Multithreading</h2>
+        <ul>
+            <li><input type="checkbox" id="concurrency1"><label for="concurrency1">Multithreading Basics: std::thread, thread safety.</label></li>
+            <li><input type="checkbox" id="concurrency2"><label for="concurrency2">Synchronization: std::mutex, std::lock, std::condition_variable.</label></li>
+            <li><input type="checkbox" id="concurrency3"><label for="concurrency3">Deadlock: Prevention and resolution.</label></li>
+            <li><input type="checkbox" id="concurrency4"><label for="concurrency4">Thread Pools: Efficiently managing threads.</label></li>
+            <li><input type="checkbox" id="concurrency5"><label for="concurrency5">Atomic Operations: std::atomic and memory ordering.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>9. Design Patterns</h2>
+        <ul>
+            <li><input type="checkbox" id="patterns1"><label for="patterns1">Creational Patterns: Singleton, Factory Method, Abstract Factory.</label></li>
+            <li><input type="checkbox" id="patterns2"><label for="patterns2">Structural Patterns: Adapter, Composite, Proxy.</label></li>
+            <li><input type="checkbox" id="patterns3"><label for="patterns3">Behavioral Patterns: Observer, Strategy, Command.</label></li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2>10. Best Practices and Code Quality</h2>
+        <ul>
+            <li><input type="checkbox" id="bestpractice1"><label for="bestpractice1">Code Modularity: Organizing code with header files and implementation files.</label></li>
+            <li><input type="checkbox" id="bestpractice2"><label for="bestpractice2">Design for Maintainability: Writing clear, testable, and maintainable code.</label></li>
+            <li><input type="checkbox" id="bestpractice3"><label for="bestpractice3">Avoiding Common Pitfalls: Memory leaks, undefined behavior, double frees.</label></li>
+        </ul>
+    </div>
+
+</body>
+</html>

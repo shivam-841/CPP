@@ -1,0 +1,122 @@
+1. Pointers and Memory Management
+
+    Basic Pointers: Syntax, dereferencing, pointer arithmetic, null pointers.
+    Dynamic Memory Management: new, delete, memory leaks, dangling pointers.
+    Smart Pointers:
+        std::unique_ptr: Ownership semantics, move semantics.
+        std::shared_ptr: Reference counting, managing shared ownership.
+        std::weak_ptr: Avoiding circular references, preventing memory leaks in shared ownership scenarios.
+        std::allocator: Low-level memory management.
+    Pointer to Array / Array of Pointers.
+    Pointer to Function: Using function pointers for callbacks.
+
+2. Object-Oriented Programming (OOP) Concepts
+
+    Classes and Objects: Basics, constructors, destructors, member functions.
+    Inheritance: Single, multiple, virtual inheritance, base vs. derived classes.
+    Polymorphism: Virtual functions, pure virtual functions, abstract classes.
+    Encapsulation and Abstraction: Access specifiers (public, private, protected), getters and setters.
+    Overloading: Function overloading, operator overloading, constructor overloading.
+    Memory Management in OOP: Destructor handling in inheritance, RAII pattern (Resource Acquisition Is Initialization).
+
+3. C++ Standard Library (STL)
+
+    Containers:
+        Vectors, Lists, Maps, Sets, Queues, Stacks.
+        Iterators: begin(), end(), rbegin(), rend(), iterator categories.
+    Algorithms:
+        Sorting (std::sort(), std::stable_sort())
+        Searching (std::binary_search(), std::find())
+        Transforming (std::transform(), std::accumulate())
+        Randomization (std::shuffle(), std::rand())
+    Function Objects (Functors): Using custom function objects with STL algorithms.
+    Lambda Functions: Capturing by value, by reference, and passing them as arguments.
+
+4. C++ Features (Version 14)
+
+    Auto Keyword: Type inference in variables and return types.
+    Smart Pointers: std::unique_ptr, std::shared_ptr, std::weak_ptr (covered in detail above).
+    Lambda Expressions:
+        Syntax, capturing variables.
+        Lambda expressions in STL algorithms.
+    std::make_unique, std::make_shared: Safer memory management and allocation.
+    Type Deduction: auto, decltype, template type deduction.
+    User-Defined Literals: Creating custom literals for types like time, distance, etc.
+    Range-based for loops: Iterating over containers and arrays.
+    std::chrono for Time Management: Measuring execution time, using timers.
+    std::tuple: Packing multiple types into one object, accessing tuple elements.
+
+5. File Operations
+
+    File I/O: Using streams (std::ifstream, std::ofstream, std::fstream).
+    Reading/Writing Text and Binary Files: Opening, closing files, handling exceptions.
+    File Buffering: Understanding buffered vs unbuffered I/O.
+    Serialization/Deserialization: Techniques to save/load data in a custom format.
+    Working with Directories and File System: Using filesystem library in C++17 (e.g., std::filesystem::path, std::filesystem::directory_iterator).
+    Error Handling in File Operations: Dealing with file errors (e.g., file not found, permission errors).
+
+6. Linux/UNIX in C++ (Industrial Use)
+
+    System Calls: Basics of interacting with the OS (e.g., open(), read(), write(), close()).
+    Process Management: Forking processes (fork()), exec() functions, process synchronization.
+    Multithreading:
+        std::thread, std::mutex, std::lock_guard, and other synchronization mechanisms.
+        Threads vs. Processes: Key differences.
+    Memory Management: Using mmap(), munmap() for memory mapping files, handling shared memory.
+    Signals and Signal Handlers: Handling OS signals, signal() or sigaction().
+    IPC (Inter-Process Communication): Pipes, message queues, shared memory.
+    Linux File System: Understanding file descriptors and working with file I/O in a low-level way.
+
+7. Basic Algorithms
+
+    Searching:
+        Linear search, Binary search.
+        Search for minimum/maximum, first occurrence, last occurrence.
+    Sorting:
+        Bubble sort, Insertion sort, Merge sort, Quick sort.
+        Using C++ STL std::sort and custom comparator functions.
+    Searching and Sorting Complexity: Understanding the time and space complexity (Big O notation).
+    Recursion: Recursive functions and their applications (e.g., searching, sorting).
+    Data Structures: Arrays, linked lists, stacks, queues, hash maps, binary search trees (BST).
+    Graph Algorithms:
+        Depth-First Search (DFS), Breadth-First Search (BFS), Dijkstra's Algorithm (for shortest path).
+    Dynamic Programming: Solving optimization problems, recognizing overlapping subproblems.
+
+8. Concurrency and Multithreading
+
+    Multithreading Basics: Creating threads with std::thread, thread safety.
+    Thread Synchronization: Using std::mutex, std::lock, std::condition_variable for managing race conditions.
+    Deadlock: Causes, prevention, and resolving deadlock in multithreaded programs.
+    Thread Pools: Managing multiple threads efficiently.
+    Atomic Operations: std::atomic, memory ordering, lock-free programming.
+
+9. Design Patterns
+
+    Creational Patterns: Singleton, Factory Method, Abstract Factory, Builder, Prototype.
+    Structural Patterns: Adapter, Composite, Proxy, Bridge.
+    Behavioral Patterns: Observer, Strategy, Command, State, Template Method, Chain of Responsibility.
+    Practical Use Cases: When to apply these patterns in real-world scenarios.
+
+10. Best Practices and Code Quality
+
+    Code Modularity: Separating concerns, using header files and implementation files.
+    Design for Maintainability: Writing clear, understandable, and testable code.
+    Avoiding Common Pitfalls: Undefined behavior, memory leaks, double frees, race conditions.
+    Effective Use of STL: Leveraging existing library functions for common tasks, avoiding reinvention.
+
+11. Additional Topics
+
+    Unit Testing and Debugging:
+        Frameworks like Google Test or Catch2.
+        Using gdb or lldb for debugging.
+    Continuous Integration: Understanding CI/CD pipelines and tools.
+    Version Control: Working with Git, branching, merging, resolving conflicts.
+    CMake: Basics of building projects with CMake, setting up dependencies, handling build configurations.
+
+Final Notes:
+
+    Problem-solving: Many tests focus on algorithmic problem-solving (e.g., sorting, searching, dynamic programming). Practice coding problems on platforms like LeetCode, HackerRank, or CodeSignal.
+    Code Quality: Be prepared to write clean, well-documented, and efficient code, as industry projects prioritize maintainable codebases.
+    Time Management: During the test, balance speed with accuracy. If you get stuck on a question, it might be best to move on and come back later if you have time.
+
+By covering these topics, you'll be well-prepared for the C++ test and have a solid understanding of the tools and techniques commonly used in industrial projects.
